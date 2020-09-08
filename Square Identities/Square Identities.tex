@@ -1,0 +1,108 @@
+\documentclass[a3paper,landscape]{article}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, mathtools}
+\newtheorem{theorem}{Theorem}[section]
+
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{
+margin = 1in}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{two}{HTML}{E8D21D}
+\definecolor{four}{HTML}{039FBE}
+\definecolor{eight}{HTML}{CF1578}
+%\colorlet{two}{red}
+%\colorlet{four}{blue}
+%\colorlet{eight}{green}
+
+\usepackage[parfill]{parskip}
+\setlength{\parindent}{0em}
+
+\begin{document}
+\pagenumbering{gobble}
+Here are formulas of roots square identities:
+
+These identities say that the product of $2$ numbers, each of which is a sum of $2^n$ squares, is itself a sum of $2^n$ squares.
+But, this is not limited to only `numbers', and this has many applications :)
+\begin{description}
+	\item[Brahmagupta–Fibonacci identity / Diophantus identity]
+	\begin{equation}
+		\begin{aligned}
+			(x_{1}^{2}+x_{2}^{2})(y_{1}^{2}+y_{2}^{2})=z_{1}^{2}+z_{2}^{2}
+		\end{aligned}
+	\end{equation}
+	Where,
+	\begin{equation}
+		\begin{aligned}
+			z_{1}&=(x_{1}y_{1}-x_{2}y_{2})\\
+			z_{2}&=(x_{1}y_{2}+x_{2}y_{1})
+		\end{aligned}
+		\quad\text{or}\quad
+		\begin{aligned}
+			z_{1}&=(x_{1}y_{1}+x_{2}y_{2})\\
+			z_{2}&=(x_{1}y_{2}-x_{2}y_{1})
+		\end{aligned}
+	\end{equation}
+	\item[Euler's {\color{four}four}--square identity]
+	\begin{equation}
+		\begin{aligned}
+			(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2})(y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2})=z_{1}^{2}+z_{2}^{2}+z_{3}^{2}+z_{4}^{2}
+		\end{aligned}
+	\end{equation}
+	Where,
+	\begin{equation}
+		\begin{aligned}
+			z_{1}&=({\color{two}x_{1}y_{1}-x_{2}y_{2}}-x_{3}y_{3}-x_{4}y_{4})\\
+			z_{2}&=({\color{two}x_{1}y_{2}+x_{2}y_{1}}+x_{3}y_{4}-x_{4}y_{3})\\
+			z_{3}&=(x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2})\\
+			z_{4}&=(x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1})
+		\end{aligned}
+	\end{equation}
+	\item[Degen's {\color{eight}eight}--square identity]
+	\begin{equation}
+		\begin{aligned}
+			(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}+x_{5}^{2}+x_{6}^{2}+x_{7}^{2}+x_{8}^{2})(y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}+y_{5}^{2}+y_{6}^{2}+y_{7}^{2}+y_{8}^{2})=z_{1}^{2}+z_{2}^{2}+z_{3}^{2}+z_{4}^{2}+z_{5}^{2}+z_{6}^{2}+z_{7}^{2}+z_{8}^{2}
+		\end{aligned}
+	\end{equation}
+	Where,
+	\begin{equation}
+		\begin{aligned}
+			z_{1}&=({\color{four}{\color{two}x_{1}y_{1}-x_{2}y_{2}}-x_{3}y_{3}-x_{4}y_{4}}-x_{5}y_{5}-x_{6}y_{6}-x_{7}y_{7}-x_{8}y_{8})\\
+			z_{2}&=({\color{four}{\color{two}x_{1}y_{2}+x_{2}y_{1}}+x_{3}y_{4}-x_{4}y_{3}}+x_{5}y_{6}-x_{6}y_{5}-x_{7}y_{8}+x_{8}y_{7})\\
+			z_{3}&=({\color{four}x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2}}+x_{5}y_{7}+x_{6}y_{8}-x_{7}y_{5}-x_{8}y_{6})\\
+			z_{4}&=({\color{four}x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1}}+x_{5}y_{8}-x_{6}y_{7}+x_{7}y_{6}-x_{8}y_{5})\\
+			z_{5}&=(x_{1}y_{5}-x_{2}y_{6}-x_{3}y_{7}-x_{4}y_{8}+x_{5}y_{1}+x_{6}y_{2}+x_{7}y_{3}+x_{8}y_{4})\\
+			z_{6}&=(x_{1}y_{6}+x_{2}y_{5}-x_{3}y_{8}+x_{4}y_{7}-x_{5}y_{2}+x_{6}y_{1}-x_{7}y_{4}+x_{8}y_{3})\\
+			z_{7}&=(x_{1}y_{7}+x_{2}y_{8}+x_{3}y_{5}-x_{4}y_{6}-x_{5}y_{3}+x_{6}y_{4}+x_{7}y_{1}-x_{8}y_{2})\\
+			z_{8}&=(x_{1}y_{8}-x_{2}y_{7}+x_{3}y_{6}+x_{4}y_{5}-x_{5}y_{4}-x_{6}y_{3}+x_{7}y_{2}+x_{8}y_{1})
+		\end{aligned}
+	\end{equation}
+	\item[Pfister's sixteen--square identity]
+	\begin{equation}
+		\begin{aligned}
+			(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+&\cdots +x_{16}^{2})\,(y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+\cdots +y_{16}^{2})=z_{1}^{2}+z_{2}^{2}+z_{3}^{2}+\cdots +z_{16}^{2}\\
+		\end{aligned}
+	\end{equation}
+Where,
+	\begin{equation}
+		\begin{aligned}
+			z_{1}&={\color{eight}{{\color{four}{\color{two}x_{1}y_{1}-x_{2}y_{2}}-x_{3}y_{3}-x_{4}y_{4}}-x_{5}y_{5}-x_{6}y_{6}-x_{7}y_{7}-x_{8}y_{8}}}+u_{1}y_{9}-u_{2}y_{{10}}-u_{3}y_{{11}}-u_{4}y_{{12}}-u_{5}y_{{13}}-u_{6}y_{{14}}-u_{7}y_{{15}}-u_{8}y_{16}\\
+			z_{2}&={\color{eight}{{\color{four}{\color{two}x_{2}y_{1}+x_{1}y_{2}}+x_{4}y_{3}-x_{3}y_{4}}+x_{6}y_{5}-x_{5}y_{6}-x_{8}y_{7}+x_{7}y_{8}}}+u_{2}y_{9}+u_{1}y_{10}+u_{4}y_{11}-u_{3}y_{12}+u_{6}y_{13}-u_{5}y_{14}-u_{8}y_{15}+u_{7}y_{16}\\
+			z_{3}&={\color{eight}{{\color{four}x_{3}y_{1}-x_{4}y_{2}+x_{1}y_{3}+x_{2}y_{4}}+x_{7}y_{5}+x_{8}y_{6}-x_{5}y_{7}-x_{6}y_{8}}}+u_{3}y_{9}-u_{4}y_{10}+u_{1}y_{11}+u_{2}y_{12}+u_{7}y_{13}+u_{8}y_{14}-u_{5}y_{15}-u_{6}y_{16}\\
+			z_{4}&={\color{eight}{{\color{four}x_{4}y_{1}+x_{3}y_{2}-x_{2}y_{3}+x_{1}y_{4}}+x_{8}y_{5}-x_{7}y_{6}+x_{6}y_{7}-x_{5}y_{8}}}+u_{4}y_{9}+u_{3}y_{10}-u_{2}y_{11}+u_{1}y_{12}+u_{8}y_{13}-u_{7}y_{14}+u_{6}y_{15}-u_{5}y_{16}\\
+			z_{5}&={\color{eight}{x_{5}y_{1}-x_{6}y_{2}-x_{7}y_{3}-x_{8}y_{4}}+x_{1}y_{5}+x_{2}y_{6}+x_{3}y_{7}+x_{4}y_{8}}+u_{5}y_{9}-u_{6}y_{10}-u_{7}y_{11}-u_{8}y_{12}+u_{1}y_{13}+u_{2}y_{14}+u_{3}y_{15}+u_{4}y_{16}\\
+			z_{6}&={\color{eight}{x_{6}y_{1}+x_{5}y_{2}-x_{8}y_{3}+x_{7}y_{4}}-x_{2}y_{5}+x_{1}y_{6}-x_{4}y_{7}+x_{3}y_{8}}+u_{6}y_{9}+u_{5}y_{10}-u_{8}y_{11}+u_{7}y_{12}-u_{2}y_{13}+u_{1}y_{14}-u_{4}y_{15}+u_{3}y_{16}\\
+			z_{7}&={\color{eight}{x_{7}y_{1}+x_{8}y_{2}+x_{5}y_{3}-x_{6}y_{4}}-x_{3}y_{5}+x_{4}y_{6}+x_{1}y_{7}-x_{2}y_{8}}+u_{7}y_{9}+u_{8}y_{10}+u_{5}y_{11}-u_{6}y_{12}-u_{3}y_{13}+u_{4}y_{14}+u_{1}y_{15}-u_{2}y_{16}\\
+			z_{8}&={\color{eight}{x_{8}y_{1}-x_{7}y_{2}+x_{6}y_{3}+x_{5}y_{4}}-x_{4}y_{5}-x_{3}y_{6}+x_{2}y_{7}+x_{1}y_{8}}+u_{8}y_{9}-u_{7}y_{10}+u_{6}y_{11}+u_{5}y_{12}-u_{4}y_{13}-u_{3}y_{14}+u_{2}y_{15}+u_{1}y_{16}\\
+			z_{9}&=x_{9}y_{1}-x_{10}y_{2}-x_{11}y_{3}-x_{12}y_{4}-x_{13}y_{5}-x_{14}y_{6}-x_{15}y_{7}-x_{16}y_{8}+x_{1}y_{9}-x_{2}y_{10}-x_{3}y_{11}-x_{4}y_{12}-x_{5}y_{13}-x_{6}y_{14}-x_{7}y_{15}-x_{8}y_{16}\\
+			z_{10}&=x_{10}y_{1}+x_{9}y_{2}+x_{12}y_{3}-x_{11}y_{4}+x_{14}y_{5}-x_{13}y_{6}-x_{16}y_{7}+x_{15}y_{8}+x_{2}y_{9}+x_{1}y_{10}+x_{4}y_{11}-x_{3}y_{12}+x_{6}y_{13}-x_{5}y_{14}-x_{8}y_{15}+x_{7}y_{16}\\
+			z_{11}&=x_{11}y_{1}-x_{12}y_{2}+x_{9}y_{3}+x_{10}y_{4}+x_{15}y_{5}+x_{16}y_{6}-x_{13}y_{7}-x_{14}y_{8}+x_{3}y_{9}-x_{4}y_{10}+x_{1}y_{11}+x_{2}y_{12}+x_{7}y_{13}+x_{8}y_{14}-x_{5}y_{15}-x_{6}y_{16}\\
+			z_{12}&=x_{12}y_{1}+x_{11}y_{2}-x_{10}y_{3}+x_{9}y_{4}+x_{16}y_{5}-x_{15}y_{6}+x_{14}y_{7}-x_{13}y_{8}+x_{4}y_{9}+x_{3}y_{10}-x_{2}y_{11}+x_{1}y_{12}+x_{8}y_{13}-x_{7}y_{14}+x_{6}y_{15}-x_{5}y_{16}\\
+			z_{13}&=x_{13}y_{1}-x_{14}y_{2}-x_{15}y_{3}-x_{16}y_{4}+x_{9}y_{5}+x_{10}y_{6}+x_{11}y_{7}+x_{12}y_{8}+x_{5}y_{9}-x_{6}y_{10}-x_{7}y_{11}-x_{8}y_{12}+x_{1}y_{13}+x_{2}y_{14}+x_{3}y_{15}+x_{4}y_{16}\\
+			z_{14}&=x_{14}y_{1}+x_{13}y_{2}-x_{16}y_{3}+x_{15}y_{4}-x_{10}y_{5}+x_{9}y_{6}-x_{12}y_{7}+x_{11}y_{8}+x_{6}y_{9}+x_{5}y_{10}-x_{8}y_{11}+x_{7}y_{12}-x_{2}y_{13}+x_{1}y_{14}-x_{4}y_{15}+x_{3}y_{16}\\
+			z_{15}&=x_{15}y_{1}+x_{16}y_{2}+x_{13}y_{3}-x_{14}y_{4}-x_{11}y_{5}+x_{12}y_{6}+x_{9}y_{7}-x_{10}y_{8}+x_{7}y_{9}+x_{8}y_{10}+x_{5}y_{11}-x_{6}y_{12}-x_{3}y_{13}+x_{4}y_{14}+x_{1}y_{15}-x_{2}y_{16}\\
+			z_{16}&=x_{16}y_{1}-x_{15}y_{2}+x_{14}y_{3}+x_{13}y_{4}-x_{12}y_{5}-x_{11}y_{6}+x_{10}y_{7}+x_{9}y_{8}+x_{8}y_{9}-x_{7}y_{10}+x_{6}y_{11}+x_{5}y_{12}-x_{4}y_{13}-x_{3}y_{14}+x_{2}y_{15}+x_{1}y_{16}\\
+		\end{aligned}
+	\end{equation}
+\end{description}
+\end{document}
